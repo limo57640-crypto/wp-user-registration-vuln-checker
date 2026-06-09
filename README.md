@@ -8,6 +8,13 @@ The goal is simple: confirm plugin exposure and find compromise indicators such 
 [![CVSS 9.8](https://img.shields.io/badge/CVSS-9.8-critical-red)](https://nvd.nist.gov/vuln/detail/CVE-2026-1492)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## Ping7 resources
+
+- Full self-check guide: https://ping7.cc/cve/wordpress-1492/
+- CVE repair service: https://ping7.cc/cve-repair/
+- Sample repair report: https://ping7.cc/cve-repair/sample-report/
+- Live CVE alerts: https://t.me/ping7cve
+
 ## Quick Start
 
 Run from the WordPress root directory, where `wp-config.php` exists:
@@ -44,6 +51,22 @@ bash check.sh /home/example/public_html
 - `COMPROMISED`: strong compromise indicators found.
 - `ERROR`: script could not complete.
 
+## Repair Handoff
+
+If you need help interpreting the result, send:
+
+```text
+Domain:
+WordPress path or host type:
+CVE: CVE-2026-1492
+Plugin version:
+Detector result: CLEAN / SUSPICIOUS / COMPROMISED / ERROR
+Symptoms: unknown admin, upload PHP file, redirect, cron, changed theme file, or scanner result
+Logs still available: yes / no
+```
+
+Do not send passwords in the first message. Send symptoms, timestamps, screenshots, and log snippets.
+
 ## What To Do If It Finds Something
 
 1. Do not delete files immediately. Preserve evidence first.
@@ -52,13 +75,13 @@ bash check.sh /home/example/public_html
 4. Remove unauthorized admin accounts after preserving details.
 5. Review uploads, cron, theme files, and access logs.
 
-Full guide: https://ping7.cc/cve/wordpress-1492
-
 Need repair help: https://ping7.cc/cve-repair
 
 ## Defensive Scope
 
 This checker is for owned or client-approved WordPress sites only. It does not exploit the vulnerability and does not modify files.
+
+It does not include exploit code, credential theft, unauthorized scanning, or instructions for offensive access.
 
 ## License
 

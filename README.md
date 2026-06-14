@@ -10,6 +10,7 @@ The goal is simple: confirm plugin exposure and find compromise indicators such 
 
 ## Ping7 resources
 
+- All GitHub tools: https://ping7.cc/github-tools/
 - Full self-check guide: https://ping7.cc/cve/wordpress-1492/
 - CVE repair service: https://ping7.cc/cve-repair/
 - Sample repair report: https://ping7.cc/cve-repair/sample-report/

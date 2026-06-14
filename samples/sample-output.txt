@@ -1,0 +1,9 @@
+WordPress User Registration CVE-2026-1492 Checker
+
+Checks run:     12
+Suspicious:     1
+Compromised:    0
+
+STATUS: SUSPICIOUS - INVESTIGATE FURTHER
+Some checks need manual review.
+Guide: https://ping7.cc/cve/wordpress-1492

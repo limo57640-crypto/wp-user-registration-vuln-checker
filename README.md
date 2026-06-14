@@ -51,6 +51,36 @@ bash check.sh /home/example/public_html
 - `COMPROMISED`: strong compromise indicators found.
 - `ERROR`: script could not complete.
 
+## Sample Output
+
+```text
+WordPress User Registration CVE-2026-1492 Checker
+
+Checks run:     12
+Suspicious:     1
+Compromised:    0
+
+STATUS: SUSPICIOUS - INVESTIGATE FURTHER
+Some checks need manual review.
+Guide: https://ping7.cc/cve/wordpress-1492
+```
+
+## Exit Codes
+
+| Code | Meaning |
+| --- | --- |
+| `0` | Clean result |
+| `1` | Suspicious finding, manual review needed |
+| `2` | Strong compromise indicator found |
+| `3` | Runtime error or WordPress root not found |
+
+## Limitations
+
+- It does not replace a full WordPress incident response.
+- It can only read files and database state available to the current user.
+- Deleted logs, disabled shell access, or managed-hosting restrictions can hide useful evidence.
+- A clean result does not prove the site was never attacked.
+
 ## Repair Handoff
 
 If you need help interpreting the result, send:
@@ -76,6 +106,13 @@ Do not send passwords in the first message. Send symptoms, timestamps, screensho
 5. Review uploads, cron, theme files, and access logs.
 
 Need repair help: https://ping7.cc/cve-repair
+
+## Contributing
+
+Open an issue for a false positive, a missed defensive signal, or a hosting
+environment that the checker handles poorly. Include plugin version, WordPress
+version, host type, and sanitized output. Do not post passwords, API keys,
+customer data, or live attack strings.
 
 ## Defensive Scope
 

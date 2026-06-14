@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2026-06-14
+
+### Documentation
+
+- Added sample output, exit codes, limitations, and contribution guidance.
+- Added issue templates for bug reports and defensive signal requests.
+- No checker logic changed.
+
 ## [1.0.0] - 2026-05-16
 
 ### Initial release

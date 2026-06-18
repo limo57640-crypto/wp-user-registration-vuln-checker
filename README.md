@@ -7,8 +7,10 @@ The goal is simple: confirm plugin exposure and find compromise indicators such 
 [![CVE-2026-1492](https://img.shields.io/badge/CVE-2026--1492-critical-red)](https://nvd.nist.gov/vuln/detail/CVE-2026-1492)
 [![CVSS 9.8](https://img.shields.io/badge/CVSS-9.8-critical-red)](https://nvd.nist.gov/vuln/detail/CVE-2026-1492)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Browse GitHub Page](https://img.shields.io/badge/Browse-GitHub%20Page-0969da)](https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/)
+[![Ping7 Guide](https://img.shields.io/badge/Ping7-self--check-0f766e)](https://ping7.cc/cve/wordpress-1492/)
 
-Browse page: https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/
+**Browse the tool page:** https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/
 
 ## Ping7 resources
 

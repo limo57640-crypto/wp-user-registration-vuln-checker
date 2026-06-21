@@ -1,16 +1,24 @@
-# WordPress User Registration CVE-2026-1492 Checker
+# WordPress User Registration Checker for CVE-2026-1492
 
-Read-only checker for WordPress sites that may be affected by **CVE-2026-1492** in the **User Registration & Membership** plugin.
+Read-only checker for owned WordPress sites that may be affected by **CVE-2026-1492** in the **User Registration & Membership** plugin.
 
-The goal is simple: confirm plugin exposure and find compromise indicators such as hidden administrator accounts, suspicious uploads, cron entries, and tampered files.
+It helps a site owner confirm plugin exposure and look for compromise indicators such as hidden administrator accounts, suspicious uploads, cron entries, and tampered files.
 
 [![CVE-2026-1492](https://img.shields.io/badge/CVE-2026--1492-critical-red)](https://nvd.nist.gov/vuln/detail/CVE-2026-1492)
 [![CVSS 9.8](https://img.shields.io/badge/CVSS-9.8-critical-red)](https://nvd.nist.gov/vuln/detail/CVE-2026-1492)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Browse GitHub Page](https://img.shields.io/badge/Browse-GitHub%20Page-0969da)](https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/)
 [![Ping7 Guide](https://img.shields.io/badge/Ping7-self--check-0f766e)](https://ping7.cc/cve/wordpress-1492/)
+[![Ping7 Repair](https://img.shields.io/badge/Ping7-CVE%20repair-b91c1c)](https://ping7.cc/cve-repair/)
 
-**Browse the tool page:** https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/
+## Start Here
+
+| Need | Link |
+| --- | --- |
+| Browse the tool page | https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/ |
+| Read the Ping7 self-check guide | https://ping7.cc/cve/wordpress-1492/ |
+| Compare with other Ping7 GitHub tools | https://ping7.cc/github-tools/ |
+| Send suspicious output for repair | https://ping7.cc/cve-repair/ |
 
 ## Ping7 resources
 
@@ -19,6 +27,14 @@ The goal is simple: confirm plugin exposure and find compromise indicators such 
 - CVE repair service: https://ping7.cc/cve-repair/
 - Sample repair report: https://ping7.cc/cve-repair/sample-report/
 - Live CVE alerts: https://t.me/ping7cve
+
+## Use This Repo When
+
+- You operate the WordPress site or have explicit approval to review it.
+- The User Registration plugin was present during the patch window.
+- A new administrator account, upload PHP file, cron entry, or redirect appeared without a clear owner.
+- You need a terminal result that can be pasted into a repair ticket.
+- You want a first pass before paying for cleanup or compromise review.
 
 ## Quick Start
 
@@ -88,7 +104,7 @@ Guide: https://ping7.cc/cve/wordpress-1492
 
 ## Repair Handoff
 
-If you need help interpreting the result, send:
+If the result is `SUSPICIOUS` or `COMPROMISED`, keep the output and send:
 
 ```text
 Domain:
@@ -100,7 +116,7 @@ Symptoms: unknown admin, upload PHP file, redirect, cron, changed theme file, or
 Logs still available: yes / no
 ```
 
-Do not send passwords in the first message. Send symptoms, timestamps, screenshots, and log snippets.
+Do not send passwords in the first message. Send symptoms, timestamps, screenshots, and sanitized log snippets.
 
 ## What To Do If It Finds Something
 
@@ -123,7 +139,7 @@ customer data, or live attack strings.
 
 This checker is for owned or client-approved WordPress sites only. It does not exploit the vulnerability and does not modify files.
 
-It does not include exploit code, credential theft, unauthorized scanning, or instructions for offensive access.
+It does not include offensive access code, credential theft, broad scanning, or abuse instructions.
 
 ## License
 

@@ -7,6 +7,11 @@
     <title>WordPress User Registration CVE-2026-1492 Checker | Ping7</title>
     <meta name="description" content="Read-only WordPress CVE-2026-1492 checker for plugin exposure, hidden admins, upload PHP files, cron changes, and cleanup handoff evidence.">
     <link rel="canonical" href="https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/">
+    <meta property="og:title" content="WordPress User Registration Checker for CVE-2026-1492">
+    <meta property="og:description" content="Read-only local WordPress checker for plugin exposure, hidden admins, upload PHP files, cron changes, and repair evidence.">
+    <meta property="og:url" content="https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"WordPress User Registration Checker","applicationCategory":"SecurityApplication","operatingSystem":"Linux","url":"https://limo57640-crypto.github.io/wp-user-registration-vuln-checker/","sameAs":"https://github.com/limo57640-crypto/wp-user-registration-vuln-checker","description":"Read-only checker for WordPress User Registration CVE-2026-1492 exposure and compromise residue.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
     <style>
       :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111827; background: #f7f8fb; --ink:#111827; --muted:#475569; --line:#d8e0ea; --panel:#fff; --accent:#b91c1c; --accent-soft:#fff1f2; --ok:#0f766e; }
       * { box-sizing: border-box; }
@@ -92,7 +97,7 @@
               <div class="metric"><strong>0 writes</strong><span>does not modify WordPress</span></div>
               <div class="metric"><strong>WP root</strong><span>runs where wp-config.php exists</span></div>
             </div>
-            <div class="notice">Use this only on WordPress sites you own or support. The checker does not modify files and does not include abuse instructions.</div>
+            <div class="notice">Use this only on WordPress sites you own or support. The checker does not modify files. No payloads. No broad scanning. No exploitation steps.</div>
           </div>
           <div class="card terminal" aria-label="Quick start">
             <div class="term-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
@@ -133,6 +138,26 @@ bash check.sh /home/example/public_html</code></pre>
             <div class="state bad"><strong>COMPROMISED</strong><p>Strong indicators were found. Preserve evidence before deleting files.</p></div>
             <div class="state"><strong>ERROR</strong><p>The script could not complete, usually because the WordPress path or permissions were wrong.</p></div>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap handoff">
+          <article class="card panel">
+            <h2>Issue or repair</h2>
+            <p>Open a GitHub issue for tool bugs, false positives, host compatibility problems, or non-sensitive documentation fixes.</p>
+            <p>Use Ping7 repair when the result is SUSPICIOUS or COMPROMISED, or when live domains, customer data, admin usernames, upload filenames, or database details should not be posted in public.</p>
+          </article>
+          <article class="card panel">
+            <h2>Evidence to keep</h2>
+            <ul>
+              <li>Checker output and version.</li>
+              <li>WordPress path, host type, and plugin version.</li>
+              <li>First suspicious timestamp.</li>
+              <li>Unknown admin names, upload PHP filenames, cron entries, redirects, or changed theme files.</li>
+              <li>Whether access logs and database backups are still available.</li>
+            </ul>
+          </article>
         </div>
       </section>
 

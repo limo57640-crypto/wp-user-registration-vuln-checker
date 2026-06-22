@@ -28,6 +28,21 @@ It helps a site owner confirm plugin exposure and look for compromise indicators
 - Sample repair report: https://ping7.cc/cve-repair/sample-report/
 - Live CVE alerts: https://t.me/ping7cve
 
+## Issue or repair
+
+Open a GitHub issue when the checker crashes, gives an unclear result, flags a false positive, or needs documentation cleanup. Keep the example non-sensitive.
+
+Use Ping7 repair when the result is `SUSPICIOUS` or `COMPROMISED`, or when the evidence includes live domains, customer data, private logs, admin usernames, upload filenames, or database details that should not be posted in public.
+
+## Evidence to keep
+
+- Checker output and version.
+- WordPress path, host type, and plugin version.
+- First suspicious timestamp.
+- Unknown admin account names, sanitized if needed.
+- Upload PHP filenames, cron entries, redirects, or changed theme files.
+- Whether access logs and database backups are still available.
+
 ## Use This Repo When
 
 - You operate the WordPress site or have explicit approval to review it.
@@ -139,7 +154,7 @@ customer data, or live attack strings.
 
 This checker is for owned or client-approved WordPress sites only. It does not exploit the vulnerability and does not modify files.
 
-It does not include offensive access code, credential theft, broad scanning, or abuse instructions.
+No payloads. No broad scanning. No exploitation steps.
 
 ## License
 
